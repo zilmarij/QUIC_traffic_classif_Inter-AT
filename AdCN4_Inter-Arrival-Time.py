@@ -181,7 +181,7 @@ if __name__ == '__main__':
     #Parse
     #Cluster
     #Classify
-    s='link_to_dataset'  
+    s='path_to_dataset'  
     for i in range(30):   #15 files to take data from
         path= s + "Youtube-" + "%s" %i +'.txt'
         parse(path, Youtube)
