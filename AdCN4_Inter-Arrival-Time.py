@@ -181,7 +181,7 @@ if __name__ == '__main__':
     #Parse
     #Cluster
     #Classify
-    s='/home/zilmarij/Downloads/Dataset/'
+    s='link_to_dataset'  
     for i in range(30):   #15 files to take data from
         path= s + "Youtube-" + "%s" %i +'.txt'
         parse(path, Youtube)
@@ -230,27 +230,27 @@ if __name__ == '__main__':
     kmeans, centroidss=cluster()
     #print(cluster_compos)
 
-    path = "/home/zilmarij/Downloads/Testing_Data/"
+    path1 = "link_to_testing_data"  
     for i in range(11):
         pl_test=[]
-        path = "/home/zilmarij/Downloads/Testing_Data/" + "Youtube-" + "%s" %i+ ".txt"
+        path = path1 + "Youtube-" + "%s" %i+ ".txt"
         iat = parse2(path)
         #classify(kmeans, centroidss, iat)
 
     for i in range(11):
         pl_test = []
-        path = "/home/zilmarij/Downloads/Testing_Data/" + "GoogleSearch-" + "%s" % i + ".txt"
+        path = path1 + "GoogleSearch-" + "%s" % i + ".txt"
         iat = parse2(path)
         #classify(kmeans, centroidss, iat)
 
     for i in range(11):
         pl_test = []
-        path = "/home/zilmarij/Downloads/Testing_Data/" + "GoogleMusic-" + "%s" % i + ".txt"
+        path = path1 + "GoogleMusic-" + "%s" % i + ".txt"
         iat = parse2(path)
         #classify(kmeans, centroidss, iat)
 
     for i in range(11):
         pl_test = []
-        path =  "/home/zilmarij/Downloads/Testing_Data/" + "GoogleDoc-" + "%s" %i+ ".txt"
+        path =  path1 + "GoogleDoc-" + "%s" %i+ ".txt"
         iat = parse2(path)
         #classify(kmeans, centroidss, iat)
